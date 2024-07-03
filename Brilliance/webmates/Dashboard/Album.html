@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_album</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        *{
+            background-color: rgb(179, 177, 177);
+        }
+        .container_P h1{
+            text-align: center;    
+        }
+
+        .custom-table1 td {
+        
+        border-collapse: collapse;
+        border: 2px solid #ccc;
+        padding: 10px;
+        text-align: left;
+        height: 200px;
+        width: 1400px;
+        border-radius: 20px;
+        }
+        .custom-table2 td {
+        border-collapse: collapse;
+        border: 2px solid #ccc;
+        padding: 10px;
+        text-align: left;
+        height: 200px;
+        width: 1400px;
+        border-radius: 20px;
+        }
+        .icon{
+            text-align: center;  
+            font-size: 120px; 
+        }
+        .SecondP{
+            text-align: center; 
+        }
+        .SecondV{
+            text-align: center; 
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container_P">
+        <h1>Album</h1>
+        
+        <div class="FirstP">
+            <h3>Add Photos</h3>
+            <table class="custom-table1">
+                <tr>
+                    <td>
+                            <div class="Pbody">
+                                <form action="Album.php" method="post" enctype="multipart/form-data">
+                                    <div class="icon">
+                                        <ion-icon name="cloud-upload"></ion-icon>
+
+                                        
+                                    </div>
+                                    <div class="SecondP">
+                                        Select a photos folder to upload
+                                    </div>
+                                    
+                                    <br>
+                                    <div class="ThirdP">
+                                        <input type="file"  id="fileInputControl" webkitdirectory="true" multiple />
+                                    </div>
+                                    <div class="FourthP">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="FirstV">
+            <h3>Add Videos</h3>
+            <table class="custom-table2">
+                <tr>
+                    <td>
+                        <div class="Pbody">
+                            <form action="Untitled-1.php" method="post" enctype="multipart/form-data">
+                                <div class="icon">
+                                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                                </div>
+                                <div class="SecondV">
+                                    Select a video folder to upload
+                                </div>
+                                <br>
+                                <div class="ThirdV">
+                                    <input type="file"  id="fileInputControl" webkitdirectory="true" multiple />
+                                </div>
+                                <div class="FourthV">
+                                    <a href="uplodedfile.html" class="link-btn1"><button class="btn">Upload</button></a>
+                                </div>
+                                </form>
+                            </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

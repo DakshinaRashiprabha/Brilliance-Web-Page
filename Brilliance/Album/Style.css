@@ -1,0 +1,267 @@
+
+* { padding: 0px; 
+    margin: 0px;
+    font-family:'Arial', 'Times New Roman', Times, serif;
+    
+}
+body{
+    background-color: #171616;
+
+}
+
+/*menu*/
+
+.menubar {
+    position: absolute; 
+    text-align: center; 
+    display: block; 
+    margin-left: 21%;
+    margin-top: -2.1%;
+} 
+
+.menubar ul {
+    display:inline-flex; 
+    list-style: none;
+    word-wrap:break-word;
+}
+
+.menubar ul li {
+    width: 120px; 
+    margin-top: -40px;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none; 
+    color: #fff;  
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+#album{ 
+    color:black;
+    background-color: #BCFD4C; 
+    border-radius: 25px;
+    padding-left:3px;
+    padding-right:3px;
+}
+#home:hover{
+    color:black
+
+}
+
+#aboutus:hover{
+    color:black
+}
+
+#album{
+    color:black
+}
+
+#videos:hover{
+    color:black
+}
+
+#contactus:hover{
+    color:black
+}
+
+
+.active, li:hover { 
+    color: black;
+    background-color: #BCFD4C;
+    border-radius: 25px;
+    
+}
+
+
+
+.container{
+    display: flex;
+
+}
+
+body{
+    background-color:rgb(0, 0, 0);
+}
+
+    section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient;
+       
+    }
+    section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient;
+        
+    }
+    
+    .container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    
+    .container .card {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.05);
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 30px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+    }
+    
+    .container .card .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+    
+    .container .card:hover .content {
+        transform: translateY(-20px);
+    }
+    
+    .container .card .content .imgBx {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+    }
+    
+    .container .card .content .imgBx img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .container .card .content .contentBx h3 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        margin: 20px 0 10px;
+        line-height: 1.1em;
+    }
+    
+    .container .card .content .contentBx h3 span {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: initial;
+    }
+    
+    .container .card .sci {
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+    }
+    
+    .container .card .sci li {
+        list-style: none;
+        margin: 0 10px;
+        transform: translateY(40px);
+        transition: 0.5s;
+        opacity: 0;
+    }
+    
+    .container .card:hover .sci li {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+    .container .card .sci li a {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    /*logo*/
+.logo {
+    position:relative;
+    padding-top: 23px;
+    margin-left: 30px;
+    
+    }
+
+.logo img {
+    width: 200px; 
+}
+
+/*footer*/
+
+.copyrights {
+    font-family:'Arial', 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+/*icon*/
+
+#followus{
+    color: #ffffff;
+    opacity:70%;
+    font-family:'Arial', 'Times New Roman', Times, serif;
+    position:absolute;
+    margin-left: 1020px;
+    margin-top:-30px ;
+
+}
+
+#fb{
+    position:absolute;
+    margin-left: 1000px;
+    cursor:pointer;
+}
+
+#ins{
+    position:absolute;
+    margin-left: 1050px;
+    cursor:pointer;
+}
+
+#tik{
+    position:absolute;
+    margin-left: 1100px;
+    size: 10px;
+    cursor:pointer;
+}
+    
+
+
+
+
+
+
+
+
+
+ 

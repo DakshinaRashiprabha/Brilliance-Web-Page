@@ -1,0 +1,71 @@
+body {
+		display : flex;
+		background-color : #171616;
+		justify-content : center;
+		align-items : center;
+		min-height : 80vh;
+		font-family : Times New Roman;
+	}
+	
+.login-box{
+		width : 450px;
+		height : 550px;
+		position : absolute;
+		background : #000;
+		border-radius  : 20px;
+		
+}	
+
+.form{
+		width : 300px;
+		height : 30px;
+		position : absolute;
+		top : 50px;
+		left : 50px;
+		transform: translate(-50%,-50%);
+		background : Gray;
+}
+
+.form1 h20   {
+		text-align : center;
+		font-size : 34;
+		color : White;
+		font-weight  : 700;
+	}
+	
+.form1 lable   {
+		text-align : center;
+		font-size : 22;
+		color : White;
+	}
+	
+.form1 input[type="text"],.form1 input[type="password"]  {
+		border : 5px;
+		background : white;
+		display : block;
+		margin  : 20px auto;
+		text-align : center;
+		border : 3px solid gray;
+		padding : 14px 10px;
+		width : 220px;
+		outline-color : white;
+		border-radius : 24px;
+		
+	}
+	
+.form1 .btn  {
+		border : 5px;
+		background : white;
+		display : block;
+		margin  : 20px auto;
+		text-align : center;
+		font-family:Times New Roman;
+		border : 3px solid black;
+		padding : 14px 10px;
+		width : 220px;
+		outline-color : white;
+		border-radius : 24px;
+		font-size:30px;
+		font-weight:bold;
+		color:Black;
+	}

@@ -1,0 +1,61 @@
+*{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+	
+}
+	
+body {
+	display : flex;
+	background-color : #171616;
+	justify-content : center;
+	align-items : center;
+	min-height : 100vh;
+	font-family : Times New Roman;
+	}
+
+table {
+	text-align : left;
+	color: white;
+}
+
+tr th {
+	text-align : left;
+	font-size : 20px;
+	font-weight: bold;
+}
+
+tr td {
+	text-align : left;
+	font-size : 18px;
+
+}
+
+td input[type="submit"]{
+	font-size : 24px;
+	font-weight:bold;
+}
+
+.Link h3{
+	border:5px;
+	background : white;
+	display : block;
+	margin  : 10px auto;
+	text-align : center;
+	border : 3px solid black;
+	padding : 8px 6px;
+	width : 50px;
+	outline-color : white;
+	border-radius : 24px;
+	font-size:16px;
+	font-weight:bold;
+	color:Black;
+}
+
+		
+		
+		
+		
+		
+		

@@ -1,0 +1,32 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family : Times New Roman;
+	font-size : 32px;
+	background-color : #171616;
+	}
+
+ul li{
+	text-align:center;
+	width:250px;
+	height:50px;
+	background-color:gray;
+	opacity: .8;
+}
+
+ul li a{
+	font-weight:bold;
+	color: white;
+	display:block;
+}
+
+ul li a:hover{
+	background-color:black;
+}
+

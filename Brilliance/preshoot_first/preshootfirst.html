@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preshoot | Home</title>
+    <script src="https://kit.fontawesome.com/f42084fe17.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" type="text/css" href="preshoot_first.css">-->
+
+
+
+    <style>
+        * {
+            background-color: #171616;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+.menubar {
+    position: relative; 
+    text-align: center; 
+    display: block; 
+    margin-right: 1.5px;
+} 
+
+.menubar ul {
+    display: inline-flex; 
+    list-style: none;
+}
+
+.menubar ul li {
+    width: 120px; 
+    margin: 15px; 
+    padding: 15px;
+}
+
+a {
+    text-decoration: none; 
+    color: #fff;  
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+#home:hover{
+    color:black
+}
+
+#aboutus:hover{
+    color:black
+}
+
+#album{
+    color:black
+}
+
+#videos:hover{
+    color:black
+}
+
+#contactus:hover{
+    color:black
+}
+
+.active, li:hover { 
+    background-color: #BCFD4C; 
+    border-radius: 25px;
+}
+
+
+
+        legend {
+            color: rgb(234, 231, 231);
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        fieldset {
+            font-family: 'Times New Roman', Times;
+            margin: 25px;
+        }
+
+        /*Out frame container*/
+        .container1 {
+            margin: 10px 15px 0 10px;
+        }
+
+        /*Animation part in PRESHOOTS*/
+        h1 {
+            color: #BCFD4C;
+            font-weight: normal;
+            font-size: 35px;
+            position: relative;
+            margin: 40px;
+            text-align: center;
+        }
+
+        h1::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: #BCFD4C;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: animate 4s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                width: 100px;
+            }
+
+            50% {
+                width: 200px;
+            }
+
+            100% {
+                width: 100px;
+            }
+        }
+
+        /*Card's images */
+        .card img {
+            width: 99%;
+            border-radius: 12px;
+            height: 255px;
+            object-fit: cover;
+            padding-left: px;
+            margin-bottom: 10px;
+        }
+
+        /*Card*/
+        .card {
+            
+            /* Add space between the border and the content */
+            padding: 8px;
+            border-radius: 12px;
+            width: 300px;
+            height: 470px;
+            margin: 25px;
+            display: inline-block;
+            box-sizing: border-box;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+
+
+
+        }
+
+        /*Location */
+
+        .tag {
+            padding: 4px 8px;
+            border: 1px solid #201f1f;
+            background-color: #dbe5f1;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #3c3c3c;
+            background-color: #a3a6aa;
+        }
+
+        /*Name Of the couple*/
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            background-color: #c0c2c5;
+            margin-top: 16px;
+            border-radius: 11px;
+        }
+
+
+        /*first Card button*/
+
+        .btn {
+            border: none;
+            padding: 14px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(57, 57, 57);
+            background-color: rgb(0, 0, 0);
+            transition: all 0.2s;
+
+            /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+            margin: 0 auto;
+            display: block;
+
+            /* Button is a clickable element, therefore it should have a pointer cursor */
+            cursor: pointer;
+
+        }
+
+        /*Link Decoration 1st*/
+        .link-btn1 {
+            text-decoration: none;
+            background-color:#BCFD4C;
+
+        }
+
+        /* Second Card button */
+        .btn2 {
+            border: none;
+            padding: 14px 24px;
+            border-radius: 50px;
+
+
+            font-weight: bold;
+            color: rgb(68, 63, 61);
+            border: 1px solid rgb(57, 57, 57);
+            background-color: white;
+            box-shadow: 0 2px 15px rgb(66, 66, 66);
+            transition: all 0.2s;
+
+            /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+            margin: 0 auto;
+            display: block;
+
+            /* Button is a clickable element, therefore it should have a pointer cursor */
+            cursor: pointer;
+
+
+        }
+
+        /*Link Decoration 2nd*/
+        .link-btn2 {
+            text-decoration: none;
+            background-color: white;
+
+        }
+
+        /*Third Card button */
+        .btn3 {
+            border: none;
+            padding: 14px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            color: black;
+            border: 1px solid rgb(57, 57, 57);
+            background-color: white;
+            box-shadow: 0 2px 15px rgb(66, 66, 66);
+            transition: all 0.2s;
+
+            /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+            margin: 0 auto;
+            display: block;
+
+            /* Button is a clickable element, therefore it should have a pointer cursor */
+            cursor: pointer;
+
+        }
+
+        /*Link Decoration 3rd*/
+        .link-btn3 {
+            text-decoration: none;
+            background-color: white;
+
+        }
+
+        /*button 1*/
+        .btn:hover {
+            color:#171616;
+            background-color: #BCFD4C;
+            box-shadow: 0 10px 15px rgb(144, 143, 143);
+        }
+
+        /*button 2*/
+        .btn2:hover {
+            color: black;
+            background-color: #BCFD4C;
+            box-shadow: 0 10px 15px rgb(144, 143, 143);
+        }
+
+        /*button 3*/
+        .btn3:hover {
+            color: black;
+            background-color: #BCFD4C;
+            box-shadow: 0 10px 15px rgb(144, 143, 143);
+        }
+
+        .card__details {
+            /* Add space around the details */
+            padding: 14px 8px 22px 8px;
+            background-color: #a3a6aa;
+            border-radius: 12px;
+
+        }
+
+
+        /*Cards Container*/
+        .container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 50px 0;
+         }
+
+.logo {   
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -778px;
+    float: none;
+}
+   
+.logo img{   
+    width: 200px; 
+    
+}
+
+.social {
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 860px;
+}
+
+
+.copyrights {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/*icon*/
+
+#followus{
+    color: #ffffff;
+    opacity:70%;
+    font-family: 'Times New Roman', Times, serif;
+    position:absolute;
+    margin-top: -20px;
+    margin-left: 1020px;
+
+}
+
+#fb{
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 1000px;
+    cursor:pointer;
+}
+
+#ins{
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 1050px;
+    cursor:pointer;
+}
+
+#tik{
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 1100px;
+    cursor:pointer;
+}
+    </style>
+</head>
+
+
+<body>
+
+    <section class="menubar">
+        <ul id="menu">
+            <a href="http://localhost/Brilliance/Home/" >
+                <li id="home">Home</li>
+            </a>
+            <a href="http://localhost/Brilliance/About%20Us/About_Us.html" >
+                <li id="aboutus">About Us</li>
+            </a>
+            <a href="http://localhost/Brilliance/Album/Album.html">
+                <li class="active" id="album">Albums</li>
+            </a>
+            <a href="http://localhost/Brilliance/Vedios/Videos.html" >
+            <li id="videos">Videos</li>
+            </a>
+            <a href="http://localhost/Brilliance/contact/contactform.php" >
+            <li id="contactus">Contact Us</li>
+            </a>
+        </ul>
+    </section>
+
+
+    <fieldset>
+        <legend> PreShoot</legend>
+        <div class="container1">
+            <!--<h1>PRESHOOTS</h1> if you want use -->
+            <br>
+            <div class="container">
+
+                <!-- A div with card class for the card  -->
+                <div class="card">
+                    <img src="Heshan & Poornima/14.jpg" alt="Heshan & Poornima image">
+
+                    <!-- A div with card__details class to hold the details in the card  -->
+                    <div class="card__details">
+                        <!-- A div with name class for the name of the card -->
+                        <div class="name">Heshan & Poornima</div>
+                        <br>
+                        <!-- A span with location of the card -->
+                        <span class="tag">Location: Kadadora</span>
+
+                        <!-- A div with location of the card -->
+                        <br><br>
+
+
+                        <a href="Heshan&Poornima.html" class="link-btn1"><button class="btn">View More</button></a>
+                    </div>
+                </div>
+
+                <!-- A div with card class for the card  -->
+                <div class="card">
+                    <img src="Shahanaz & Dilru/1.jpg" alt="Shahanaz & Dilru image">
+
+                    <!-- A div with card__details class to hold the details in the card  -->
+                    <div class="card__details">
+
+                        <!-- A div with name class for the name of the card -->
+                        <div class="name">Shahanaz & Dilru</div>
+                        <br>
+
+                        <!-- A span with location of the card -->
+                        <span class="tag">Location: Colombo</span>
+                        <br><br>
+
+                        <a href="Shahanaz&Dilru.html" class="link-btn2"><button class="btn">View More</button></a>
+                    </div>
+                </div>
+
+                <!-- A div with card class for the card  -->
+                <div class="card">
+                    <img src="Buddhika & Maheshi/6.jpg" alt="Buddhika & Maheshi image">
+
+                    <!-- A div with card__details class to hold the details in the card  -->
+                    <div class="card__details">
+                        <!-- A div with name class for the name of the card -->
+                        <div class="name">Buddhika & Maheshi</div>
+                        <br>
+
+                        <!-- A span with location of the card -->
+                        <span class="tag">Location: Galle</span>
+                        <br><br>
+
+
+
+                        <a href="buddika_maheshi.html" class="link-btn3"><button class="btn">View More</button></a>
+                    </div>
+                </div>
+
+                
+
+
+                </container>
+    </fieldset>
+
+    <div>
+        <section class="logo"><img src="LOGO small copy.png"></section>
+        </div>
+    
+        <div id="followus">
+            <h3>Follow Us</h3>
+        </div>
+    
+        <div id="fb">
+            <a href="https://www.facebook.com/studiobrilliance"><i class="fa-brands fa-facebook fa-beat-fade fa-lg" style="color: #ffffff;"></i></a>
+        </div>
+    
+        <div id="ins">
+            <i class="fa-brands fa-instagram fa-beat-fade fa-lg" style="color: #ffffff;"></i>
+        </div>
+    
+        <div id="tik">
+            <a href="https://www.tiktok.com/@brilliancephotography"><i class="fa-brands fa-tiktok fa-beat-fade fa-lg" style="color: #ffffff;"></i></a>
+        </div>
+    
+        <div class="copyrights">
+            <p>
+                Copyright &copy; 2022 Brilliance Studio All rights reserved. 
+            </p>
+    
+        </div>
+</body>
+
+</html>
